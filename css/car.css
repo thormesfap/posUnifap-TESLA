@@ -1,0 +1,194 @@
+header {
+    background-color: #F1F1F1;
+}
+
+.menu ul li a.active,
+.menu nav ul li a:hover {
+    color: #212121;
+}
+
+.configuration {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: 55px;
+    padding: 0px 5%;
+    margin-bottom: 50px;
+    gap: 50px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.car-choice {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-choice .choice{
+    color: #9A9999;
+    letter-spacing: 5px;
+    font-size: 10px;
+}
+
+.car-choice .car-name, .car-choice img{
+    align-self: center;
+    letter-spacing: 7px;
+    font-size: 14px;
+}
+
+.configuration__settings {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 10px;
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.car-choice img {
+    width: 300px;
+}
+
+.input-group {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+
+.input label {
+    color: #9A9999;
+    font-weight: 600;
+    font-size: 10px;
+    letter-spacing: 5px;
+}
+
+.input input {
+    background-color: #F0F0F0;
+    height: 51px;
+    border: none
+}
+
+input.fullname {
+    border-top: #1E1E1E 2px solid;
+}
+
+.separator {
+    width: 100%;
+    border-top: #4C4C4C 2px solid
+}
+
+.optional{
+    display:flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.opcoes{
+    display: flex;
+    gap: 20px;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.opcoes__title{
+    color: #9A9999;
+}
+.opcoes__seletores{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.opcoes__seletores label{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+input[type='radio'] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #E1DEDE;
+    border-radius: 50%;
+    outline: none;
+    margin-right: 5px;
+    cursor: pointer;
+}
+input[type='radio']:disabled{
+    cursor: default;
+}
+
+/* Style the checked state */
+input[type='radio'] {
+    background-color: #E1DEDE;
+    border-color: #E1DEDE;
+    position: relative;
+}
+
+/* Create the inner dot */
+input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #212121;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-transform: uppercase;
+}
+.price > div{
+    display: flex;
+    height: 51px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+}
+.price__value{
+    font-size: 14px;   
+    letter-spacing: 7px;
+}
+.price__total{
+    background-color: #F0F0F0;
+}
+.config__buttons{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+}
+.config__buttons > div{
+    color: #212121;
+    padding: 20px 40px;
+    text-align: center;
+    width: 20%;
+    border: #212121 2px solid;
+    border-radius: 2px;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+.config__buttons .order{
+    background-color: #212121;
+    color: #FFFFFF;
+}
